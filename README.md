@@ -17,6 +17,8 @@ Devtools transport features:
 -   Powerline formatting.
 -   Emoji code.
 
+![Screenshot](https://raw.githubusercontent.com/ripreact/logger/master/Screenshot.png)
+
 ## API
 
 For advanced API docs see `src/index.ts` (after `Internals` region).
