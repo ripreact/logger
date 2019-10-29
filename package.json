@@ -1,14 +1,15 @@
 {
     "name": "@ripreact/logger",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "An opinionated logger for browser devtools.",
-    "main": "dist/index.js",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/ripreact/logger",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://twitter.com/miyaokamarina)",
     "license": "MIT",
     "scripts": {
-        "prepublish": "tsc && babel src --out-dir dist --source-maps --extensions '.ts'"
+        "prepublish": "tsc && babel src/index.ts -so dist/index.esm.js --config-file ./babel.config.esm.js && babel src/index.ts -so dist/index.cjs.js --config-file ./babel.config.cjs.js"
     },
     "dependencies": {
         "@ripreact/hsl": "^1.0.1",
