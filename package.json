@@ -1,6 +1,6 @@
 {
     "name": "@ripreact/logger",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "An opinionated logger for browser devtools.",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",

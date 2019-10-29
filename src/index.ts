@@ -330,7 +330,7 @@ export const DevtoolsTransport = (config = {} as DevtoolsTransportConfig): Plugi
             }
 
             namespace.forEach((x, i) => {
-                if (!filterSegments(x, i, tags)) return;
+                if (!filterSegments(x, i, namespace)) return;
 
                 const { id, name, diff } = x;
 
